@@ -73,3 +73,7 @@
 - 초기에는 DB 업데이트를 함수화하여 구현.
 - 이후 Log 데이터 특성을 고려해 처리 속도 저하를 방지해야 한다고 판단해 Airflow 사용.
 - 현재 1시간에 한 번씩 실행 중.
+
+## Flask - 모델 분리 서버 구현 (자세한 사항은 web 폴더의 cnn_flask 참고)
+- 비교적 용량이 큰 cnn 모델링만의 서버 구현을 위해 Flask 기반 Serving Server 구현.
+- Django Web Server 내에 있는 것보다 안정성을 기대.
